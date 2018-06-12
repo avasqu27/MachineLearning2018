@@ -13,16 +13,23 @@
 #  limitations under the License.
 """Convolutional Neural Network Estimator for MNIST, built with tf.layers."""
 
+#  TO USE, SEE OFFICIAL SITE 
+#  https://github.com/tensorflow/tensorflow/blob/r1.8/tensorflow/examples/tutorials/layers/cnn_mnist.py 
+
+
+#  imports from py library 
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+#  sets imports to variables 
 import numpy as np
 import tensorflow as tf
 
+#  term verbose refers to tree-building process 
 tf.logging.set_verbosity(tf.logging.INFO)
 
-
+#  creating the CNN architecture 
 def cnn_model_fn(features, labels, mode):
   """Model function for CNN."""
   # Input Layer
